@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="image/icon.png">
+    <meta name="description" content="image,image-processing,editor,web image editor">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Processing</title>
+
+    <link rel="stylesheet" type='text/css' href="style.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://jivanmagare.github.io/myproject.github.io/" target="_blank">Develop by : JIVAN MAGARE(other projects are here).</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div id="Main">
+    <div class="left">
+    <form id="SliderRange">
+        <label for='grayscale'>Grayscale</label>
+        <input type='text' id='gsValue' placeholder="0%" class="same" disabled>
+        <input value='0' min='' max='100' type='range' name='grayscale' id='grayscale' class='range'>
+        <br>
+
+        <label for='blue'>Blur</label>
+        <input type='text' id='blurValue' placeholder="0px" class="same" disabled>
+        <input value='0' min='' max='10' type='range' name='blur' id='blur' class='range'>
+        <br>
+
+        <label for='hue-rotate'>Hue-Rotate</label>
+        <input type='text' id='huerotateValue' placeholder="0deg" class="same" disabled>
+        <input value='0' min='' max='1000' type='range' name='hue-rotate' id='hue-rotate' class='range'>
+        <br>
+
+        <label for='sepia'>sepia</label>
+        <input type='text' id="sepiaValue" placeholder="0%" class="same" disabled>
+        <input value='0' min='' max='1000' type='range' name='sepia' id='sepia' class='range'>
+        <br>
+
+        <label for='zoom'>Zoom</label>
+        <input type='text' id="zoomValue" placeholder="0%" class="same" disabled>
+        <input value='0' min='10' max='30' type='range' name='zoom' id='zoom' class='range'>
+        <br>
+
+        <label for='rotate'>Rotate</label>
+        <input type='text' id="rotateValue" placeholder="0deg" class="same" disabled>
+        <input value='0' min='' max='360' type='range' name='rotate' id='rotate' class='range'>
+        <br>
+
+        <label for='skewY'>SkewY</label>
+        <input type='text' id="skewYValue" placeholder="0deg" class="same" disabled>
+        <input value='0' min='' max='100' type='range' name='skewY' id='skewY' class='range'>
+        <br>
+
+        <label for='skewX'>SkewX</label>
+        <input type='text' id="skewXValue" placeholder="0deg" class="same" disabled>
+        <input value='0' min='' max='100' type='range' name='skewX' id='skewX' class='range'>
+        <br>
+
+        <button type='reset' id='btn' onmouseout="hover()">Reset</button>
+    </form>
+    </div>
+
+    <div class="mid">
+        <form id="midform">
+        <br>
+        <label for='borderR'>Border-Radius</label>
+        <input type='text' id="borderR" autocomplete="off">
+        <button type="submit" id='borderRadius'>Submit</button>
+        </form>
+
+        <div class="container">
+            <img src='image/alien.jpg' id='one' class="imageSet">
+            <img src='image/TheHobbit.jpg' id='two' class="imageSet">
+            <img src='image/venom.jpg' id='three' class="imageSet">
+            <img src='image/worldwarz.jpg' id='four' class="imageSet">
+        </div>
+
+        <p id="sharper">sharper</p>
+        <label class="togglebtn">
+            <input type="checkbox" id="CheckBox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <div class="right">
+        <form id="Imageform">
+            <input type='file' accept='image/*' id='ImageFile'>
+            <img src='image/Assassin.jpg' id="setImage">
+        </form>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
