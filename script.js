@@ -61,7 +61,7 @@ function AddEffect(){
         
         setNewImage.style.transform='scale('+parseFloat(zoom_value)/10 +') rotate('+rotate_value+'deg) skewY('+skewY_value+'deg) skewX('+skewX_value+'deg)';
 
-        document.getAnimations(skewYValue).value=`${skewX_value}deg`;
+        document.getElementById('skewXValue').value=`${skewX_value}deg`;
         document.getElementById('skewYValue').value=`${skewY_value}deg`;
         document.getElementById('rotateValue').value=`${rotate_value}deg`;
         document.getElementById('gsValue').value=`${grayscale_value}%`;
